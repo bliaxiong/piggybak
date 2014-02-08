@@ -1,7 +1,7 @@
 Piggybak::Engine.routes.draw do
   scope :module => "piggybak" do
     # cart actions
-    match "/cart" => "cart#show", :as => :cart
+    get "/cart" => "cart#show", :as => :cart
     post "/cart/add" => "cart#add", :as => :cart_add
     post "/cart/update" => "cart#update", :as => :cart_update
     delete "/cart/remove/:item" => "cart#remove", :as => :remove_item
