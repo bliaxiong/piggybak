@@ -23,5 +23,4 @@ Gem::Specification.new do |s|
   s.add_dependency "activemerchant"
   s.add_dependency "devise"
   s.add_dependency "rack-ssl-enforcer"
-  s.add_dependency "protected_attributes"
 end
