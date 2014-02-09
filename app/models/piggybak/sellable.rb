@@ -1,6 +1,7 @@
 class Piggybak::Sellable < ActiveRecord::Base
   belongs_to :item, :polymorphic => true, :inverse_of => :piggybak_sellable
   attr_accessible :sku, :description, :price, :quantity, :active, :unlimited_inventory, :item_id, :item_type 
+  attr_accessible :image, :product_type, :location, :seats, :date, :time, :menu, :category, :count
   attr_accessible :item # to allow direct assignment from code or console
 
   validates_presence_of :sku
